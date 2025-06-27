@@ -1,0 +1,17 @@
+.status-message {
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
