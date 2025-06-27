@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const getCountries = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/countries');
+        const res = await axios.get('https://form-validation-yc2d.onrender.com/api/countries');
         setCountries(res.data); 
       } catch (err) {
         console.error('Error fetching countries:', err);
@@ -79,7 +79,7 @@ function App() {
   const checkUsernameAvailability = async (username) => {
     setIsCheckingUsername(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/check-username/${username}`);
+      const res = await axios.get(`https://form-validation-yc2d.onrender.com/api/check-username/${username}`);
       setUsernameAvailable(res.data.available);
     } catch (err) {
       console.error('Error checking username:', err);
